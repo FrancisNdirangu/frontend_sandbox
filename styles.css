@@ -1,7 +1,7 @@
 body {
     display: grid;
-    min-height: 350vh;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
+    min-height: 250vh;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
     grid-template-columns: 1fr 2.5fr;
 }
 
@@ -41,4 +41,37 @@ nav {
     align-items: self-start;
     border-right: 5px black solid;
     grid-column: 1/2;
+}
+
+@media ( max-width: 700px) {
+
+    
+
+    body {
+        display:grid;
+        grid-template-rows: 0.25fr 0.8fr 0.25fr;
+    }
+
+
+    .layout-container {
+        display:grid;
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-rows: 0.5fr 2fr;
+        width: 100vw;
+    }
+
+    main {
+        position:static;
+        grid-column: 1/-1;
+        grid-row:2/3
+    }
+
+    nav {
+        position: static;
+        grid-column: 1/-1;
+        grid-row:1/2;
+        border-right: unset;
+    }
+
+
 }
