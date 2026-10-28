@@ -1,6 +1,6 @@
 body {
     display: grid;
-    min-height: 100vh;
+    min-height: 250vh;
     grid-template-rows: 0.5fr 3fr 0.5fr;
 }
 
@@ -20,7 +20,7 @@ footer {
     grid-template-columns: 1fr 2.5fr;
     grid-template-rows: 1fr 1fr;
     background-color: aliceblue;
-    width: 100vw;
+    width: 100%;
 
 }
 main {
@@ -46,7 +46,7 @@ nav {
 
     body {
         display:grid;
-        grid-template-rows: 0.25fr ;
+        grid-template-rows: 1fr ;
     }
 
 
@@ -54,7 +54,7 @@ nav {
         display:grid;
         grid-template-columns: 1fr 2.5fr;
         width: 100%;
-        min-height: 100vh;
+        min-height: 100%;
     }
     
     header {
