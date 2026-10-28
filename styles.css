@@ -1,7 +1,7 @@
 body {
     display: grid;
-    min-height: 100vh;
-    grid-template-rows: 1fr 2fr 1fr;
+    min-height: 350vh;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
     grid-template-columns: 1fr 2.5fr;
 }
 
@@ -18,12 +18,27 @@ footer {
     grid-row: 3/-1;
 }
 
+.layout-container {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: aliceblue;
+    width: 100vw;
+
+}
 main {
     background-color: blue;
+    grid-column: 2/-1;
+    grid-row: 1/-1;
 }
 
 
 
 nav {
     background-color: pink;
+    top: 1.5rem;
+    position: sticky;
+    align-items: self-start;
+    border-right: 5px black solid;
+    grid-column: 1/2;
 }
