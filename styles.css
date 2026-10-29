@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-rows: 0.5fr 7fr 0.5fr;
 }
 
 
@@ -34,7 +34,6 @@ nav {
     background-color: pink;
     top: 1.5rem;
     position: sticky;
-    align-items: self-start;
     border-right: 5px black solid;
     grid-column: 1/2;
 
