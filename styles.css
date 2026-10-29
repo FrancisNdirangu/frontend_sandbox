@@ -43,11 +43,14 @@ nav {
 
 }
 
+
+
 article {
     display:flex;
     gap: 1rem;
     border: 1px solid grey;
     background-color: crimson;
+    margin: 1rem;
 }
 
 .blog-content {
