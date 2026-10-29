@@ -26,7 +26,6 @@ main {
     background-color: blue;
     grid-column: 2/-1;
     grid-row: 1/-1;
-    min-height: 1000px;
 }
 
 
@@ -38,7 +37,7 @@ nav {
     align-items: self-start;
     border-right: 5px black solid;
     grid-column: 1/2;
-    height: 500%;
+
 }
 
 @media ( max-width: 700px) {
