@@ -10,28 +10,30 @@
 <body>
     <header> header</header>
     <div class="layout-container">
-    <nav class="sticky-navbar">nav
-        This means the main element can never be shorter than 1,000px, even if it contains only a single line of text.
-
-It can grow beyond that if necessary, but it cannot shrink below it.
-
-At a viewport height of 844px, your main content is therefore already taller than the screen before you add any meaningful content.
-
-This is fine for an experiment, but I wouldn't use that approach as the basis for your real application's layout.
-Does main have to be taller than nav?
-Not necessarily.
-    </nav>
+    <nav class="sticky-navbar">nav</nav>
     <main class="allBlogs">main content
-        I've checked your latest commit in frontend_sandbox, and your reasoning is improving. You've understood the central idea behind content-driven layouts, but there are two important misconceptions I want to correct before you continue.
+        <section>
+            <article>
+                <h2 class="blog-cover">Blog Cover</h2>
+                <div class="blog-content">
+                    <h2> Blog Title</h2>
+                    <section>
+                        <h3>Blog rating</h3>
+                        <h3>Blog author</h3>
+                        <h3>Blog Date</h3>
+                    </section>
 
-I also tested your updated CSS in Chromium to see exactly how the browser handles your experiments.
-1. Question 1 — auto 1fr
-Correct choice of grid tracks
-You answered that you would use:
-grid-template-rows: auto 1fr;
+
+                    <p> <strong>blog content</strong>
+                        This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. The default is 0 1 auto, but if you set it with a single number value, like flex: 5;, that changes the flex-basis to 0%, so it’s like setting flex-grow: 5; flex-shrink: 1; flex-basis: 0%;.
 
 
+                    </p>
+                    
+                </div>
 
+            </article>
+        </section>
  </main>
     </div>
     <footer> footer</footer>

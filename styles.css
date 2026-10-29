@@ -33,11 +33,40 @@ main {
 
 nav {
     background-color: pink;
+    
     top: 1.5rem;
     position: sticky;
     border-right: 5px black solid;
     grid-column: 1/2;
+    align-self: start;
+    
 
+}
+
+article {
+    display:flex;
+    gap: 1rem;
+    border: 1px solid grey;
+    background-color: crimson;
+}
+
+.blog-content {
+    background-color: cadetblue;
+    margin: 1rem;
+}
+
+.blog-content section {
+    display: flex;
+    gap: 1rem;
+    background-color: aliceblue;
+}
+
+.blog-cover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+    background-color: bisque;
 }
 
 @media ( max-width: 700px) {
@@ -69,7 +98,7 @@ nav {
     main {
         position:static;
         grid-column: 1/-1;
-        grid-row:2/-1
+        grid-row:2/-1;
     }
 
     nav {
